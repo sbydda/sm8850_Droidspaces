@@ -138,7 +138,7 @@ jobs:
           
           echo "正在克隆llvm-clang19工具链..." &&
           mkdir -p clang19 &&
-          aria2c -s16 -x16 -k1M https://github.com/cctv18/android_kernel_common_oneplus_sm8850/archive/refs/heads/oneplus/sm8850_b_16.0_pad_3_pro.zip -o clang.zip &&
+          aria2c -s16 -x16 -k1M https://github.com/cctv18/oneplus_sm8650_toolchain/releases/download/LLVM-Clang19-r536225/clang-r536225.zip -o clang.zip &&
           unzip -q clang.zip -d clang19 &&
           rm -rf clang.zip &
 
