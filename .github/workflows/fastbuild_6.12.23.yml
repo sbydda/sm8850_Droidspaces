@@ -493,7 +493,7 @@ jobs:
             #echo "CONFIG_BRIDGE_NETFILTER=y" >> ./arch/arm64/configs/gki_defconfig
             #echo "CONFIG_NF_TABLES=y" >> ./arch/arm64/configs/gki_defconfig
             # 开启 NTSync
-            # echo "CONFIG_NTSYNC=y" >> ./arch/arm64/configs/gki_defconfig
+             echo "CONFIG_NTSYNC=y" >> ./arch/arm64/configs/gki_defconfig
             if [[ "${{ github.event.inputs.droidspaces_enable }}" == "extend" ]]; then
               echo "正在启用容器环境扩展支持..."
               # 开启虚拟 HCI 设备支持
